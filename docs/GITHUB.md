@@ -8,10 +8,10 @@ Before making the repository public:
    for public disclosure.
 2. Rotate any Wi-Fi password or WeatherFlow token that appeared in the original
    development archive if it is still active.
-3. Verify the redistribution terms for `drivers/oled_1inch3.py` and
-   `drivers/mcp7940.py`; remove either file if provenance cannot be confirmed.
-4. Choose whether the repository should remain proprietary (current root
-   `LICENSE`) or be released under an open-source license.
+3. Verify the redistribution terms for `drivers/oled_1inch3.py`; remove the file
+   if provenance cannot be confirmed.
+4. Retain the root MIT `LICENSE` and all applicable third-party notices in the
+   public release.
 5. Enable GitHub secret scanning and push protection when available.
 6. Protect the default branch and require the `tests` workflow before merging.
 7. Add a short repository description, topics such as `micropython`,

@@ -20,6 +20,11 @@ Calling `Hypnos.start()` enables the oscillator and battery-backup bit. Calling
 `Hypnos.sleep((months, days, hours, minutes, seconds))` programs a relative alarm
 and then asserts DONE.
 
+Capture power-fail records before calling `start()` or assigning the time;
+these calls write the weekday register and can clear the records. Follow the
+[user manual](USER_MANUAL.md) for first-time clock setup, alarm-output checks,
+and the current driver's limitations.
+
 ## Optional peripherals found in the development archive
 
 The original project also contains work involving a 1.3-inch OLED, a Waveshare
