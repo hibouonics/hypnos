@@ -1,9 +1,9 @@
 # Development Guide
 
-## Active code vs. reference code
+## Code organization
 
 New product work should target `firmware/hypnos.py` and small scripts in
-`examples/`. The `legacy/` directory is retained for historical context only.
+`examples/`. Reusable peripheral drivers belong in `drivers/`.
 
 ## Style
 

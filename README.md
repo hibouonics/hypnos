@@ -40,7 +40,6 @@ hypnos/
 ├── examples/
 │   ├── basic_sleep.py
 │   └── read_status.py
-├── legacy/                # Selected earlier prototypes; not production code
 ├── tests/                 # Host-side unit tests
 ├── docs/
 │   ├── HARDWARE.md
@@ -151,19 +150,6 @@ values were ever committed to another repository, rotate them rather than only
 deleting the file from the latest commit.
 
 See [`SECURITY.md`](SECURITY.md) for disclosure guidance.
-
-## Legacy code
-
-`legacy/` contains selected development scripts for engineering reference. They
-are not guaranteed to match the current module names, pinout, or API and should
-not be treated as production firmware. Large upstream SDKs, nested Git
-repositories, generated build files, duplicate vendor examples, and credential-
-bearing experiments from the source archive are intentionally not included.
-
-The redundant `drivers/mcp7940.py` helper has been removed. Historical scripts
-`legacy/debug_i2c.py` and `legacy/hypnos_seed.py` still refer to its old
-`MCP7940` module name; they are archival examples and are not runnable as
-provided. Use `firmware/hypnos.py` for current RTC applications.
 
 ## Licensing
 
