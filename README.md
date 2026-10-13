@@ -44,6 +44,7 @@ hypnos/
 ├── docs/
 │   ├── HARDWARE.md
 │   └── USER_MANUAL.md
+├── licenses/              # Third-party license texts
 └── THIRD_PARTY_NOTICES.md
 ```
 
@@ -126,8 +127,7 @@ matters, move its status capture before `start()` as shown in the manual.
 The [review notes](docs/USER_MANUAL.md#current-driver-limitations) document
 non-atomic clock reads/writes, incomplete input validation, a year-mask bug
 affecting 2080-2099, and retained alarm-output configuration. Read these before
-deploying unattended power cycling. This documentation update does not change
-the firmware implementation.
+deploying unattended power cycling.
 
 ## Development
 
@@ -144,15 +144,12 @@ For hardware validation, see the
 ## Security and credentials
 
 **Never commit Wi-Fi passwords, API tokens, private keys, or device-specific
-credentials.** The original development archive contained local credentials;
-they have intentionally been excluded from this cleaned repository. If those
-values were ever committed to another repository, rotate them rather than only
-deleting the file from the latest commit.
+credentials.** Keep device-specific configuration outside version control.
 
 ## Licensing
 
 Hibouonics-owned code in this repository is available under the
 [MIT License](LICENSE).
-Third-party driver code remains under its original terms. Review
-[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) before making the repository
-public.
+Third-party drivers retain their original licenses, including GNU GPL version 3
+for the Waveshare OLED driver. See
+[third-party notices](THIRD_PARTY_NOTICES.md) for attribution and license texts.

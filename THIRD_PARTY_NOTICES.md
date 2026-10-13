@@ -13,11 +13,22 @@ Walters, and Erik Hess. The notice in that source file must be retained.
 `drivers/epaper_4in2.py` identifies the Waveshare team as author and includes an
 MIT-style permission notice in the source header. That notice must be retained.
 
-## OLED driver
+## Waveshare OLED driver
 
-`drivers/oled_1inch3.py` originated in the existing project files and appears to
-be hardware-vendor example code. The source archive did not include a license
-header in that file. Before redistributing this driver publicly, Hibouonics
-should verify the original vendor source and redistribution terms. If licensing
-cannot be confirmed, exclude this file from a public release and document the
-external dependency instead.
+[`drivers/oled_1inch3.py`](drivers/oled_1inch3.py) is adapted from Waveshare's
+Pico OLED 1.3-inch SPI example in
+[`waveshare/Pico_code`](https://github.com/waveshare/Pico_code).
+
+- [Upstream source](https://github.com/waveshare/Pico_code/blob/c50bc57040a33ee9540e993a2bbe99bf6e621fbd/Python/Pico-OLED-1.3/Pico-OLED-1.3%28spi%29.py)
+  at revision `c50bc57040a33ee9540e993a2bbe99bf6e621fbd`.
+- [Upstream license](https://github.com/waveshare/Pico_code/blob/c50bc57040a33ee9540e993a2bbe99bf6e621fbd/LICENSE):
+  GNU General Public License, version 3.
+- [Included license text](licenses/Waveshare-Pico_code-GPL-3.0.txt), copied
+  verbatim from that revision.
+
+The local adaptation removes the standalone demonstration, uses `const()` for
+pin definitions, reorders imports, and corrects the `balck` attribute to
+`black`. Attribution and license references were added on 2026-10-12.
+
+This driver retains its upstream GPL terms and is not covered by the root MIT
+license. Keep its attribution and accompanying license when redistributing it.

@@ -1,3 +1,13 @@
+# Adapted from Waveshare's Pico OLED 1.3-inch SPI example.
+# Source: https://github.com/waveshare/Pico_code
+# File: Python/Pico-OLED-1.3/Pico-OLED-1.3(spi).py
+# Reference revision: c50bc57040a33ee9540e993a2bbe99bf6e621fbd
+# License: GNU General Public License, version 3.
+# See licenses/Waveshare-Pico_code-GPL-3.0.txt and THIRD_PARTY_NOTICES.md.
+# Local changes: removed standalone demo, reordered imports, used const() for
+# pin definitions, and corrected the balck attribute to black.
+# Attribution and license notice added 2026-10-12; driver logic unchanged.
+
 from machine import Pin,SPI
 import time
 import framebuf
