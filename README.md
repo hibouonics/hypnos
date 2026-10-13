@@ -43,8 +43,7 @@ hypnos/
 ├── tests/                 # Host-side unit tests
 ├── docs/
 │   ├── HARDWARE.md
-│   ├── USER_MANUAL.md
-│   └── DEVELOPMENT.md
+│   └── USER_MANUAL.md
 └── THIRD_PARTY_NOTICES.md
 ```
 
@@ -139,7 +138,8 @@ MicroPython-friendly. Hardware-independent logic can be checked on a desktop:
 python -m unittest discover -s tests -v
 ```
 
-For hardware validation, see [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md).
+For hardware validation, see the
+[user manual](docs/USER_MANUAL.md#troubleshooting-and-validation).
 
 ## Security and credentials
 

@@ -419,5 +419,4 @@ On the actual board, verify time advances, perform a short alarm cycle with
 enough time to observe it, and check both DONE and the RTC wake output. Test
 retention and capture power-fail records before initialization writes. Exercise
 midnight/month-end scheduling before unattended deployment. Record the PCB
-revision, firmware version, supply arrangement, and observed timing. See the
-[development guide](DEVELOPMENT.md) for the release workflow.
+revision, firmware version, supply arrangement, and observed timing.
