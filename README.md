@@ -149,8 +149,6 @@ they have intentionally been excluded from this cleaned repository. If those
 values were ever committed to another repository, rotate them rather than only
 deleting the file from the latest commit.
 
-See [`SECURITY.md`](SECURITY.md) for disclosure guidance.
-
 ## Licensing
 
 Hibouonics-owned code in this repository is available under the
