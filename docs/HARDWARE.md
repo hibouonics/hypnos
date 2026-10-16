@@ -25,12 +25,20 @@ these calls write the weekday register and can clear the records. Follow the
 [user manual](USER_MANUAL.md) for first-time clock setup, alarm-output checks,
 and the current driver's limitations.
 
-## Optional peripherals found in the development archive
+## Optional reference drivers
 
-The original project also contains work involving a 1.3-inch OLED, a Waveshare
-4.2-inch e-paper display, and a PMS5003 particulate-matter sensor. These are
-kept as optional/reference drivers and are not required by the core Hypnos
-class.
+Some examples may use these optional reference drivers for additional
+peripherals:
+
+| Peripheral | Reference driver |
+| --- | --- |
+| 1.3-inch OLED | [`oled_1inch3.py`](../drivers/oled_1inch3.py) |
+| Waveshare 4.2-inch e-paper display | [`epaper_4in2.py`](../drivers/epaper_4in2.py) |
+| PMS5003 particulate-matter sensor | [`pms5003.py`](../drivers/pms5003.py) |
+
+The main driver, [`firmware/hypnos.py`](../firmware/hypnos.py), does not require
+these files or peripherals. Copy an optional driver to the device only when
+an example or your application uses it.
 
 ## Bring-up checklist
 
